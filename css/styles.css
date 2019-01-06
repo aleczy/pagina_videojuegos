@@ -38,6 +38,18 @@ body {
 	color: white
 }
 
+#footerContact {
+	background: rgb(0, 19, 34) !important;
+	color: white;
+	font-family: 'Comfortaa', cursive !important;
+}
+
+#footContact {
+	background: rgb(0, 19, 34) !important;
+	color: white;
+	font-family: 'Comfortaa', cursive !important;
+}
+
 .ir-arriba {
 	display: none;
 	padding: 20px;
@@ -55,6 +67,23 @@ body {
 
 .navegacion {
 	background: #044c86
+}
+
+.navegacionContacto {
+	background: #044c86;
+}
+
+.navegacionContacto a {
+	text-decoration: none;
+	font-family: 'Comfortaa', cursive !important;
+}
+
+.navegacionContacto a:hover {
+	color: red
+}
+
+.navegacionContacto ul {
+	padding-top: 1%;
 }
 
 .img-footer {
@@ -1419,3 +1448,5 @@ h3.h3 {
 	font-weight: bold;
 	padding: 10px;
   }
+
+  /* contacto */

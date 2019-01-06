@@ -10,10 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!--libreria para l sintaxis de jquery-->
     <script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/guardar_comentarios.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!--libreria para efectos de bootstrap-->
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
 
@@ -47,6 +43,29 @@
     <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
     <!-- styles/bootstrap fin -->
 
+    <!-- contacto links -->
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="contacto/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="contacto/css/util.css">
+    <link rel="stylesheet" type="text/css" href="contacto/css/main.css">
+    <!--===============================================================================================-->
+    <!-- fin contacto links -->
+
 </head>
 
 <body>
@@ -61,7 +80,7 @@
 
     <!-- navbar inicio -->
     <div class="wow bounceInUp">
-        <nav class="navegacion sidenav-trigger">
+        <nav class="navegacionContacto sidenav-trigger">
             <div class="nav-wrapper">
                 <a href="index.html" class="brand-logo">
                     <img class="logo img-fluid" style="	margin-left: 2rem; margin-top: 0rem;" src="img/logo.png" alt="">
@@ -89,74 +108,114 @@
     <span class="ir-arriba fas fa-arrow-up"></span>
     <!-- boton arriba fin -->
     <br>
+    <!-- formulario -->
+    <div class="container-contact100">
 
-    <!-- contactanos -->
-    <section>
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    Send Us A Message
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                    <input class="input100" type="text" name="name" placeholder="Full Name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
+                    <input class="input100" type="text" name="email" placeholder="E-mail">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                    <input class="input100" type="text" name="phone" placeholder="Phone">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                    <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        <span>
+                            <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                            Send
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="dropDownSelect1"></div>
+
+    <!-- <section>
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
-                    <form id="form1" method="post">
-                        <table class="table table-striped center-block">
-                            <thead>
-                                <tr class="text-center">
-                                    <td colspan="2">
-                                        Formulario de Opiniones
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <label>Nombre Completo:</label>
-                                    </td>
-                                    <td>
-                                        <input type="text" id="nombre" class="form-control" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>Email:</label>
-                                    </td>
-                                    <td>
-                                        <input type="email" id="email" class="form-control" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>Teléfono</label>
-                                    </td>
-                                    <td>
-                                        <input type="tel" id="telefono" class="form-control" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>Comentarios:</label>
-                                    </td>
-                                    <td>
-                                        <textarea rows="3" cols="6" id="comentarios" class="form-control" required></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <input id="submit" type="submit" class="btn btn-success">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
+              <div class="col-md-12">
+                <form id="form1" method="post">
+                 <table class="table table-striped center-block">
+                 <thead>
+                  <tr class="text-center">
+                   <td colspan="2"> 
+                    Formulario de Opiniones
+                   </td>
+                  </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                   <td>
+                    <label>Nombre Completo:</label>
+                   </td>
+                   <td>
+                    <input type="text" id="nombre" class="form-control" required>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td>
+                    <label>Email:</label>
+                   </td>
+                   <td>
+                    <input type="email" id="email" class="form-control" required>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td>
+                    <label>Teléfono</label>
+                   </td>
+                   <td>
+                    <input type="tel" id="telefono" class="form-control" required>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td>
+                    <label>Comentarios:</label>
+                   </td>
+                   <td>
+                    <textarea rows="3" cols="6" id="comentarios" class="form-control" required></textarea>
+                   </td>
+                  </tr>
+                  <tr>
+                   <td colspan="2">
+                    <input id="submit"  type="submit" class="btn btn-success">
+                   </td>
+                  </tr>
+                 </tbody>	
+                 </table>
+                </form>
+              </div>
             </div>
         </div>
-    </section>
-    <div id="mainform">
-
-    </div>
-    <!-- fin de contactanos -->
+        </section>
+        <div id="mainform">
+        
+        </div> -->
+    <!-- fin formulario -->
 
     <!-- footer -->
-    <section id="footer" class="wow flipInY">
-        <footer id="footer1" class="footer-distributed">
+    <section id="footerContact" class="wow flipInY">
+        <footer id="footContact" class="footer-distributed">
 
             <div class="footer-left">
 
@@ -224,6 +283,33 @@
     <script src="js/main.js"></script>
     <script>
         new WOW().init();
+    </script>
+
+    <!--===============================================================================================-->
+	<script src="contacto/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/vendor/bootstrap/js/popper.js"></script>
+        <script src="contacto/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/vendor/daterangepicker/moment.min.js"></script>
+        <script src="contacto/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+        <script src="contacto/js/main.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-23581568-13');
     </script>
 </body>
 

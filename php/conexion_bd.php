@@ -1,6 +1,6 @@
 <?php
 // Establishing connection with server by passing "server_name", "user_id", "password".
-$connection = mysql_connect("localhost", "root", "");
+$connection = mysql_connect("localhost:80", "root", "");
 // Selecting Database by passing "database_name" and above connection variable.
 $db = mysql_select_db("amazon", $connection);
 $name2=$_POST['name1']; // Fetching Values from URL
